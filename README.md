@@ -2,6 +2,7 @@
 
 *本文档是敏捷开发所用看板的线上版，用markdown语法撰写。*
 
+----
 ![](https://www.egoistk21.xyz/image/1261521515729_.pic.jpg)
 
 |||
@@ -15,4 +16,5 @@
 |比赛模块| 张文凯|
 |球队模块| 席林 |
 
-[项目原型](https://canb4m.axshare.com)
+----
+### [项目原型](https://canb4m.axshare.com)
