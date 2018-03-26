@@ -6,6 +6,8 @@ fund(user_id,fund_type_id)
 fund_type(id,num,rate)
 friend(uer_id,friend_id)
 
+game_history(id,time,fields)
+user_game(user_id,game_history_id)
 
 bag_player(user_id,player_id,score,salary,input_data_id,duedate)eg:salary=600(pay monthly)
 input_data(id)
