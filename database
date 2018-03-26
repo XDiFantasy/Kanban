@@ -1,0 +1,30 @@
+user(id,nickname,tel,level,money)
+lineup(id,user_id,team_info_id,pf,c,sf,sg,pg,strategy_id)
+vip(user_id,level,active,duedate)
+vip_card(id,type,time,price)
+fund(user_id,fund_type_id)
+fund_type(id,num,rate)
+friend(uer_id,friend_id)
+
+
+bag_player(user_id,player_id,score,salary,input_data_id,duedate)eg:salary=600(pay monthly)
+input_data(id)
+bag_equip(user_id,equip_id,num)
+bag_piece(user_id,piece_id,num)
+bag_prop(user_id,fund_card_num,exp_card_num)
+bag_trail_card(user_id,player_id,num,time)
+prop_using(user_id,type,duetime)//type:fund-0,exp-1
+
+
+team_info(id,name,city,intro)
+player_base(id,birthday,country,height,weight,armspan,reach_height,draft,contract,season_id,team_id,cloth_num,pos1,pos2,price,score)eg:price=5000(recruit)
+equip(id,name)
+season_data(id,season,is_regular,^)
+equip_attr(equip_id,attribute,value)//attribute included in input_data()
+piece(id,player_id,total_num)
+strategy(id,c_detail_id,sf,sg,pg,pf,v_c,v_sf,v_sg,v_pg,v_pf)
+strategy_detail(id,input_data_ch^^^)
+theme(id,title,detail,price)
+theme_player(theme_id,player_id)
+theme_equip(theme_id,equip_id)
+theme_prop(theme_id,fund_card_num,exp_card_num)
