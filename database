@@ -21,12 +21,11 @@ prop_using(user_id:fk(user:id),type:int,duetime:datetime)//type:fund-0,exp-1
 
 team_info(id:ai(0),name:vc(255),city:vc(255),intro:vc(255))
 player_base(id:ai(0),name:vc(50),birthday:date,country:vc(20),height:float,weight:float,armspan:float,reach_height:float,draft:vc(255),contract:vc(255),season_id:fk(seasson_data:id),team_id:fk(team_info:id),cloth_num:int,pos1:vc(2),pos2:vc(2),price:int,score:int)eg:price=5000(recruit)
-equip(id:ai(0),name:vc(20))
+equip(id:ai(0),name:vc(20),attr_ch_id)
 season_data(id:ai(0),season:vc(10),is_regular:bool,^)
-equip_attr(equip_id:fk(equip:id),attribute,value:float)//attribute included in input_data()
+attr_ch(id,fields like input_data)//attribute included in input_data()
 piece(id:ai(0),player_id:fk(player_base:id),total_num:int)
-strategy(id:ai(0),c_detail_id:fk(strategy_detail:id),sf,sg,pg,pf,v_c,v_sf,v_sg,v_pg,v_pf)
-strategy_detail(id:ai(0),input_data_ch^^^)
+strategy(id:ai(0),c:fk(attr_ch:id),sf,sg,pg,pf,v_c,v_sf,v_sg,v_pg,v_pf)
 theme(id:ai(0),title:vc(255),detail:vc(255),price:int)
 theme_player(theme_id:fk(theme:id),player_id:fk(player_base:id))
 
