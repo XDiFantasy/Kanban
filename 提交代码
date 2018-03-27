@@ -1,0 +1,4 @@
+1.  在自己本地的项目文件夹下：git pull https://github.com/XDiFantasy/iFantasy.git
+2.  如果git提示出现冲突，则自己解决冲突
+3.  冲突解决完后：git push origin master (就是将自己的代码上传到自己帐号里fork的项目）
+4.  在github自己帐号里fork的项目里面，点击 new pull request
