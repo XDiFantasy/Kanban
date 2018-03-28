@@ -8,6 +8,7 @@ WRITE_DATABASE = BASE.format(251)
 class Config:
     SECRET_KEY = "miyao"
     SQLALCHEMY_DATABASE_URI = "mysql+pymysql://user:password@localhost:3306/dbname" #WRITE_DATABASE
+    SQLALCHEMY_TRACK_MODIFICATIONS =True
     
 
 class DeveploeConfig(Config):
