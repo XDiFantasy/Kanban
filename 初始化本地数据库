@@ -1,0 +1,9 @@
+首先确认在app目录下是否有config.py文件，没有的话在看板中下载
+修改config.py文件中的数据库链接
+在项目目录下依次运行 
+  python manage.py db init 
+  pyhon manage.py db migrate -m '备注信息'
+  python manage.py db upgrade
+数据库本地初始化完毕，如果以后在数据库中增加字段，则需要先修改你的orm类，然后依次运行：
+  python manage.py db migrate -m '备注信息'
+  python manage.py db upgrade
