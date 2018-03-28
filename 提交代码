@@ -1,8 +1,8 @@
-从XDiFantasy/iFantasy fork 到自己的github仓库里
+从中央仓库XDiFantasy/iFantasy fork 到自己的github仓库里
 将自己github仓库克隆到本机
-开发自己的模块
-在自己本地的项目文件夹下：git pull https://github.com/XDiFantasy/iFantasy.git
-如果git提示出现冲突，则自己解决冲突
-冲突解决完后：git push origin master (就是将自己的代码上传到自己帐号里fork的项目）
-在github自己帐号里fork的项目里面，点击 new pull request
+开发自己的模块(记得add和commit!!!)
+将远程仓库pull到本机，在自己本地的项目文件夹下：git pull https://github.com/XDiFantasy/iFantasy.git
+如果git提示出现冲突，则解决冲突
+冲突解决完后，推送到自己的github仓库里：git push origin master
+把自己的github仓库里fork的项目请求合并到中央仓库，点击 new pull request
 返回步骤3
