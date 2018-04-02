@@ -1,4 +1,5 @@
-添加或修改/etc/my.cnf文件：
+step1：查找配置文件位置：locate my.cnf
+step2：添加或修改my.cnf文件：
 
 [mysqld]
 character-set-server=utf8
