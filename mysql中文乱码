@@ -1,5 +1,6 @@
 step1：查找配置文件位置：locate my.cnf
-step2：添加或修改my.cnf文件：
+step2：添加或修改my.cnf文件：sudo vim ……
+step3：重启MySQLservice mysql restart
 
 [mysqld]
 character-set-server=utf8
