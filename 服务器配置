@@ -1,0 +1,28 @@
+nginx:
+server {
+    listen       80;
+    server_name  fires.site;
+    #charset koi8-r;
+    access_log  /home/team1/logs/access.log;
+    error_log  /home/team1/logs/error.log;
+    location / {
+
+        include        uwsgi_params;
+
+        uwsgi_pass     127.0.0.1:8001;
+
+    }
+}
+---------------------------------------------------
+uwsgi:
+socket = 127.0.0.1:8001
+chdir = /home/team1/iFantasy
+wsgi-file = /home/team1/iFantasy/manage.py
+callable = app
+processes = 1
+threads = 2
+---------------------------------------------------
+启动：
+alias actvenv='. /home/team1/venv/bin/activate'
+alias goi='cd /home/team1'
+alias suwsgi='nohup uwsgi /home/team1/uwsgi.ini &'
