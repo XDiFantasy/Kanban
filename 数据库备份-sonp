@@ -1,0 +1,8 @@
+工具mysqlworkbench
+一、选择数据库migration（已有远程服务器）
+    按照向导
+    schema 必须同名
+二、备份到本地
+    菜单栏选择Server>data export
+    数据库schema不变，建议选择dump structure and data
+    否则建议选择，dump data only
