@@ -32,6 +32,8 @@ class Config:
     'ru': {'flag':'ru', 'name':'Russian'},
     'pl': {'flag':'pl', 'name':'Polish'}}
     APP_THEME = "bootstrap-theme.css"
+    app_key = u''
+    master_secret = u''
 
 
 class DeveploeConfig(Config):
