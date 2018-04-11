@@ -22,16 +22,12 @@ callable = app
 processes = 1
 threads = 2
 ---------------------------------------------------
-启动：
-#.bashrc中添加别名方便使用(root用户已添加）
-#alias actvenv='. /home/team1/venv/bin/activate'
-#alias goi='cd /home/team1'
-#alias suwsgi='nohup uwsgi /home/team1/uwsgi.ini &'  无终端启动服务
+启动(root)：
 
-直接goi,actvenv,suwsgi三条命令启动
-goi,cat nohup.out 查看uwsgi服务状态
-goi,cat logs/error.log 查看nginx错误
----------------------------------------------------
-关闭：
-killall -9 uwsgi 杀死进程
-ps ax |grep uwsgi 可查看进程是否被杀死
+ruwsgi:重启(常用)
+wuwsgi:查看uwsgi的日志
+huwsgi:查看uwsgi服务状态
+suwsgi:启动uwsgi(需先进入vnev)
+tuwsgi:停止uwsgi
+actvenv:进入venv
+goi;cat logs/error.log 查看nginx错误
